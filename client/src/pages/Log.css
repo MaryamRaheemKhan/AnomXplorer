@@ -1,0 +1,11 @@
+body{
+    background-color: #bcd8ef;
+   
+}
+
+
+  
+.scrollable-content {
+    overflow:scroll;
+  }
+  

@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.highlighted-row {
+  background-color: yellow; /* Change the background color to highlight */
+}
+
+.anomaly-description-box {
+  border: 2px solid #ccc; /* Set border properties */
+  padding: 10px; /* Add padding for better appearance */
+  margin-top: 10px; /* Add margin to separate from the table rows */
+}
+
+.tree-container {
+  position: fixed;
+  top: 50px; /* Adjust as needed */
+  right: 50px; /* Adjust as needed */
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+.anomaly-node circle {
+  fill: red;
+}
+

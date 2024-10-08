@@ -1,0 +1,129 @@
+/* Dashboard.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+   /* Hide horizontal scrollbar */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 20px;
+  width: calc(100% - 40px); /* Adjust width */
+  margin: 0 auto; /* Center horizontally */
+  transition: margin-left 0.3s;
+  border-radius: 6px;
+  
+}
+
+.dashboard h1 {
+  font-size: 36px; /* Increase font size for emphasis */
+  font-weight: bold; /* Add bold font weight for prominence */
+  color: #92c4f9; /* Change color to a vibrant blue */
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase; /* Convert text to uppercase for a bold look */
+  letter-spacing: 2px; /* Add spacing between letters for clarity */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  
+}
+
+
+.kpi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 60%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Apply box shadow here */
+  border-radius: 6px;
+}
+
+.kpi-item {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.kpi-item:hover {
+  transform: translateY(-5px);
+}
+
+.kpi-item h3 {
+  font-size: 20px; /* Increase font size for emphasis */
+  font-weight: bold; /* Add bold font weight for prominence */
+  color: #92c4f9;
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Convert text to uppercase for a bold look */
+  letter-spacing: 2px; /* Add spacing between letters for clarity */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Apply box shadow here */
+  border-radius: 6px;
+}
+
+.chart-item {
+  width: 100%; /* Adjust width of the chart */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.chart-item h2 {
+  font-size: 20px; /* Increase font size for emphasis */
+  font-weight: bold; /* Add bold font weight for prominence */
+  color: #92c4f9;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase; /* Convert text to uppercase for a bold look */
+  letter-spacing: 2px; /* Add spacing between letters for clarity */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px; /* Position on the left side */
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+}
+.dashcontainer{
+  border: 2px;
+  border-color: black;
+}
+.menu-open {
+  margin-left: 250px; /* Adjust menu width */
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard {
+    padding-left: 0;
+    width: calc(100% - 20px); /* Adjust width for smaller screens */
+  }
+
+  .menu-open {
+    margin-left: 0;
+  }
+
+  .chart-item {
+    width: 100%; /* Adjust width of the chart for smaller screens */
+  }
+}
