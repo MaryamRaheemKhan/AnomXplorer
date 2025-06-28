@@ -1,5 +1,5 @@
 # Project Title
-**AnomXplorer- Anomaly Detector System for HealthCare System**
+**AnomXplorer- Anomaly Detector System for HealthCare Management System**
 
 Log Based Testing Through Machine Learning for Hospital Management Systems
 
