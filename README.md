@@ -4,7 +4,7 @@
 Log Based Testing Through Machine Learning for Hospital Management Systems
 
 ## Section Title
-**Description To Project**
+**Description To AnomXplorer Project**
 
 Our project explores machine learning for log-based testing in hospital systems to enhance data integrity and security by detecting
 anomalies in system logs. We propose an advanced anomaly detection system using a decision tree algorithm for real-time analysis
