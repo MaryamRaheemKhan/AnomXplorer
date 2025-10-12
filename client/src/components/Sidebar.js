@@ -35,29 +35,25 @@ function Sidebar({ isLoggedIn }) {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <div className="navbar">
-          {/* Menu Icon */}
-          <Link to="#" className="menu-bars" onClick={showSidebar}>
-            <TiThMenuOutline />
-          </Link>
+      <div className="navbar">
+  <Link to="#" className="menu-bars" onClick={showSidebar}>
+    <TiThMenuOutline />
+  </Link>
 
-          {/* Spacer to push notification icon to the right */}
-          <div className="spacer" />
+  <IconButton
+    size="large"
+    edge="end"
+    color="inherit"
+    aria-label="menu"
+    className="notification-icon"
+    onClick={handleNotificationClick}
+  >
+    <Badge badgeContent={notificationCount} color="error">
+      <IoMdNotificationsOutline />
+    </Badge>
+  </IconButton>
+</div>
 
-          {/* Notification Icon with Badge */}
-          <IconButton
-            size="large"
-            edge="end"
-            color="inherit"
-            aria-label="menu"
-            className="notification-icon"
-            onClick={handleNotificationClick}
-          >
-            <Badge badgeContent={notificationCount} color="error"> {/* Badge component */}
-              <IoMdNotificationsOutline />
-            </Badge>
-          </IconButton>
-        </div>
 
         {/* Sidebar */}
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

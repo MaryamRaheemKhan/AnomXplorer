@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const cors = require('cors');
 const User = require('./models/User');
 const Predictions = require('./models/Predictions');
@@ -12,7 +13,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 const PORT = 5000;
 
-mongoose.connect({MONGODB_URI}, {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   dbName: 'my_database'

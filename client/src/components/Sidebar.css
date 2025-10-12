@@ -1,18 +1,29 @@
-.navbar {
-    background-color: #060b26;
-    height: 80px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-  }
+
   
-  .menu-bars {
-    margin-left: 2rem;
-    font-size: 2rem;
-    background: none;
-  }
-  
+  .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes left and right apart */
+  background-color: #060b26;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.menu-bars {
+  font-size: 2rem;
+  background: none;
+  cursor: pointer;
+}
+
+.notification-icon {
+  color: white;
+}
+
+/* Optional: remove old spacer if it exists */
+.spacer {
+  display: none;
+}
+
   .nav-menu {
     background-color: #060b26;
     width: 250px;
