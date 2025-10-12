@@ -1,0 +1,163 @@
+/* Dashboard.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  min-height: 80vh; /* Changed from height: 50% */
+  margin: 0 auto;
+  transition: margin-left 0.3s;
+  border-radius: 6px;
+}
+
+.dashboard h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #92c4f9;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%; /* Changed from 60% */
+  max-width: 800px; /* Added max-width */
+  padding: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+.kpi-item {
+  flex: 1; /* Changed from flex-basis */
+  min-width: 80px; /* Added min-width */
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin: 10px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.kpi-item:hover {
+  transform: translateY(-5px);
+}
+
+.kpi-item h3 {
+  font-size: 14px; /* Slightly reduced */
+  font-weight: bold;
+  color: #92c4f9;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Reduced */
+}
+
+.kpi-item p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  /* Remove fixed height and overflow */
+}
+
+.chart-item {
+  width: 100%; /* Changed from 80% to use full container width */
+  padding: 20px; /* Use fixed padding instead of percentage */
+  background-color: #ffffff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  /* Remove height and overflow properties */
+}
+
+.chart-item h2 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #92c4f9;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+
+.dashcontainer {
+  width: 100%;
+  min-height: 80vh; /* Changed from height: 50% */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu-open {
+  margin-left: 250px;
+}
+/* 
+@media screen and (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .kpi-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .kpi-item {
+    min-width: unset;
+    margin: 5px 0;
+  }
+
+  .chart-container {
+    width: 100%;
+  }
+
+  .chart-item {
+    padding: 10px;
+  }
+
+  .dashboard h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dashboard h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .kpi-item h3 {
+    font-size: 16px;
+  }
+
+  .kpi-item p {
+    font-size: 20px;
+  }
+} */

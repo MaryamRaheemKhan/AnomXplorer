@@ -1,0 +1,50 @@
+.highlighted-row {
+  background-color: #bcd8ef; /* Change the background color to whatever you prefer */
+}
+
+.anomaly-description-box {
+  border: 2px solid #ccc; /* Set border properties */
+  padding: 10px; /* Add padding for better appearance */
+  margin-top: 10px; /* Add margin to separate from the table rows */
+}
+
+
+
+
+.anomaly-node circle {
+  fill: red;
+}
+
+/* DataTable.css */
+
+/* Add styles for the tree container with the specific class name */
+
+
+/* Add styles for the tree container with the specific class name */
+
+
+.tree-container {
+  position: absolute; /* Position the tree container */
+  top: calc(100% + 10px); /* Position it below the row with some additional space */
+  left: 0; /* Align it with the left edge */
+  z-index: 1000; /* Ensure it appears above other content */
+  width: 100%; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  border: 1px solid #ccc; /* Add border for visualization */
+  overflow: auto; /* Enable scrolling if the tree exceeds container dimensions */
+  border-color: red; /* Highlight the tree container with a red border */
+}
+
+/* CSS */
+.datagrid-header {
+  font-size: 1.2rem; /* Adjust the font size for header cells */
+  font-weight: bold; /* Optionally, make the header text bold */
+  background-color: #f0f0f0; /* Change background color for header cells */
+  color: #d21c1c; /* Change text color for header cells */
+}
+
+.datagrid-cell {
+  font-size: 1rem; /* Adjust the font size for content cells */
+  padding: 8px; /* Add padding for content cells */
+  /* Add any other styles you want for content cells */
+}

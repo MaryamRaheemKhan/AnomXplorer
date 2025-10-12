@@ -1,0 +1,43 @@
+/* anomalyStyles.css */
+
+.anomaly-heading {
+  font-size: 36px; /* Increase font size for emphasis */
+font-weight: bold; /* Add bold font weight for prominence */
+color: #83bcf9; /* Change color to a vibrant blue */
+margin-bottom: 20px;
+margin-top: 40px;
+text-align: center;
+text-transform: uppercase; /* Convert text to uppercase for a bold look */
+letter-spacing: 2px; /* Add spacing between letters for clarity */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);}
+
+.anomaly-table-container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+  overflow-x: auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.anomaly-table {
+  min-width: 100%;
+}
+
+.anomaly-table-cell {
+  background-color: #d0e7ff;
+  border-right: 1px solid #ffffff;
+  font-size: 24px; /* Increase font size for emphasis */
+font-weight: bold; /* Add bold font weight for prominence */
+color: #54a5fc;
+
+}
+
+.anomaly-table-cell:last-child {
+  border-right: none;
+}
+
+.anomaly-table-row:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
